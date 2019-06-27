@@ -62,10 +62,11 @@ class MemeGen extends Component {
             placeholder="Bottom"
             onChange={this.handleChange}
           />
-
+        </form>
+        <div className={"meme-form"}>
           <button onClick={this.newMeme}>Memake!</button>
           <button onClick={this.clearText}>Clear</button>
-        </form>
+        </div>
         <div className="meme">
           <img src={this.state.memeImage} alt="" />
           <h2 className="top">{this.state.topText}</h2>
